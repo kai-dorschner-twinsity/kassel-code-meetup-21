@@ -7,6 +7,7 @@ import Zoom from 'reveal.js/plugin/zoom/zoom.esm.js';
 let deck = new Reveal({
 
   plugins: [Zoom, Notes],
+
   // Display presentation control arrows
   controls: true,
 

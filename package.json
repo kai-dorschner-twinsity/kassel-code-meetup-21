@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "build": "npm run clean && parcel build ./src/index.html --log-level info --dist-dir build --no-source-maps",
     "clean": "rimraf dist build parcel-bundle-reports .cache .parcel-cache",
     "start": "parcel serve ./src/index.html --open",
+    "start:build": "servor ./build index.html 8080 --browse",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kai Dorschner",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "5.2.0",
-    "reveal.js": "^4.3.1"
+    "reveal.js": "4.3.1"
   },
   "devDependencies": {
     "eslint": "8.20.0",
@@ -23,6 +25,7 @@
     "eslint-plugin-typescript-sort-keys": "2.1.0",
     "parcel": "2.6.2",
     "prettier": "2.7.1",
+    "servor": "4.0.2",
     "stylelint": "14.9.1",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-prettier": "2.0.0",
