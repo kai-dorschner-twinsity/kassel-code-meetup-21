@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    // "incremental": true,
+    "importHelpers": true,
+    "removeComments": true,
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "esnext", // enables code-splitting
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": false,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "target": "ESNext",
+    "typeRoots": ["./node_modules/@types/"]
+  },
+  "exclude": ["**/node_modules/**", "**/__test__/**", "**/*.test.ts", "**/*.test.tsx"]
+}
