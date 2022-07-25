@@ -64,28 +64,28 @@
         </section>
         <section>
           <h1>Disclaimer</h1>
-          <h3>Frontend- and Javascript-Biased</h3>
+          <h3><span class="text-info">heavily</span> Frontend and Javascript <span class="text-info">biased</span></h3>
           <p class="opacity-50">Also: Ask questions whenever you want</p>
         </section>
         <section>
           <h3>Structure</h3>
           <ol>
             <li>
-              <span>What are <strong class="fragment highlight-blue" data-fragment-index="1">Poly</strong>-Repos</span>
+              <span>What are <strong class="text-info" data-fragment-index="1">Poly</strong>repos</span>
               <ol class="fragment" data-fragment-index="1">
                 <li>Definition</li>
                 <li>Use Cases (Demo)</li>
-                <li>Pros</li>
-                <li>Cons</li>
+                <li>Pros 🤘</li>
+                <li>Cons 👊</li>
               </ol>
             </li>
             <li>
-              <span>What are <strong class="fragment highlight-blue" data-fragment-index="1">Mono</strong>-Repos</span>
+              <span>What are <strong class="text-info" data-fragment-index="1">Mono</strong>repos</span>
               <ol class="fragment" data-fragment-index="1">
                 <li>Definition</li>
                 <li>Use Cases (Demo)</li>
-                <li>Pros</li>
-                <li>Cons</li>
+                <li>Pros 🤘</li>
+                <li>Cons 👊</li>
               </ol>
             </li>
             <li class="fragment opacity-25" data-fragment-index="1">Sources</li>
@@ -98,59 +98,103 @@
               <span class="opacity-50">&middot;</span>
               <span>Oligo</span>
               <span class="opacity-50">&middot;</span>
-              <span class="text-primary">Poly</span>
+              <span class="text-warning">Poly</span>
             </h2>
             <h2 class="fragment fade-up" data-fragment-index="1">
               <span>one</span>
               <span class="opacity-50">&middot;</span>
               <span>few</span>
               <span class="opacity-50">&middot;</span>
-              <span class="text-primary">many</span>
+              <span class="text-warning">many</span>
             </h2>
           </section>
 
           <section data-auto-animate>
-            <h4>Polyrepos</h4>
-            <h2>Definition</h2>
+            <h4><span class="text-warning">Poly</span>repos</h4>
+            <h1>Definition</h1>
           </section>
           <section data-auto-animate>
-            <h4>Polyrepos</h4>
+            <h4><span class="text-warning">Poly</span>repos</h4>
             <ul>
-              <li>one Problem = one Repo</li>
-              <li class="fragment fade-up">one Product = many Repos</li>
-              <li class="fragment fade-up">classic, well-known approach</li>
+              <li><span class="text-warning">one</span> Problem = <span class="text-warning">one</span> Repo</li>
+              <li class="fragment fade-up">
+                <span class="text-warning">one</span> Product = <span class="text-danger">many</span> Repos
+              </li>
+              <li class="fragment fade-up">classic, well-understood approach</li>
             </ul>
           </section>
           <section data-auto-animate>
-            <h4>Polyrepos</h4>
-            <h2>Use Cases</h2>
+            <h4><span class="text-warning">Poly</span>repos</h4>
+            <h1>Use Cases</h1>
           </section>
           <section data-auto-animate>
-            <h4>Polyrepos</h4>
+            <h4><span class="text-warning">Poly</span>repos</h4>
             <ul>
               <li>heterogeneous teams</li>
+              <li class="fragment fade-up">code isolation</li>
               <li class="fragment fade-up">granular user access</li>
             </ul>
             <aside class="notes">
-              heterogeneous: different coding styles, different languages, opposing teams repo structures
+              <ul>
+                <li>
+                  <strong>heterogeneous</strong>: different coding styles, different languages, opposing teams repo
+                  structures
+                </li>
+                <li><strong>isolation</strong>: different SCMs Github vs Gitlab</li>
+                <li><strong>access</strong>: e.g. grant external users access to only one part of your application</li>
+              </ul>
             </aside>
           </section>
         </section>
         <section>
-          <h2 class="fragment semi-fade-out" data-fragment-index="1">
-            <span class="text-primary">Mono</span>
-            <span class="opacity-50">&middot;</span>
-            <span>Oligo</span>
-            <span class="opacity-50">&middot;</span>
-            <span>Poly</span>
-          </h2>
-          <h2 class="fragment fade-up" data-fragment-index="1">
-            <span class="text-primary">one</span>
-            <span class="opacity-50">&middot;</span>
-            <span>few</span>
-            <span class="opacity-50">&middot;</span>
-            <span>many</span>
-          </h2>
+          <section>
+            <h2 class="fragment semi-fade-out" data-fragment-index="1">
+              <span class="text-info">Mono</span>
+              <span class="opacity-50">&middot;</span>
+              <span>Oligo</span>
+              <span class="opacity-50">&middot;</span>
+              <span>Poly</span>
+            </h2>
+            <h2 class="fragment fade-up" data-fragment-index="1">
+              <span class="text-info">one</span>
+              <span class="opacity-50">&middot;</span>
+              <span>few</span>
+              <span class="opacity-50">&middot;</span>
+              <span>many</span>
+            </h2>
+          </section>
+          <section data-auto-animate>
+            <h4><span class="text-info">Mono</span>repos</h4>
+            <h1>Definition</h1>
+          </section>
+          <section data-auto-animate>
+            <h4><span class="text-info">Mono</span>repos</h4>
+            <ul>
+              <li><span class="text-success">many</span> Problems = <span class="text-info">one</span> Repo</li>
+              <li class="fragment fade-up">
+                <span class="text-success">many</span> Products = <span class="text-info">one</span> Repo
+              </li>
+              <li class="fragment fade-up">monorepo &ne; monolith</li>
+              <li class="fragment fade-up">relatively* new approach</li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>aka: shared codebases</li>
+                <li>
+                  since early 2000s<sup><a href="https://en.wikipedia.org/wiki/Monorepo" target="_blank">1</a></sup>
+                </li>
+                <li>monolith: distills many code fragments into one big application (e.g. a videogame)</li>
+                <li>
+                  monorepo: contains many individual, homogeneous (sometimes interdependent) applications (e.g.
+                  microservices)
+                </li>
+              </ul>
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <h4><span class="text-info">Mono</span>repos</h4>
+            <h1>Use Cases</h1>
+          </section>
         </section>
       </div>
     </div>

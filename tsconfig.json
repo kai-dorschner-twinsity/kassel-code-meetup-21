@@ -7,7 +7,6 @@
     // "incremental": true,
     "importHelpers": true,
     "removeComments": true,
-    "jsx": "react-jsx",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "esnext", // enables code-splitting
     "moduleResolution": "node",
