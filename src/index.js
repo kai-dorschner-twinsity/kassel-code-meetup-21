@@ -1,8 +1,12 @@
 import Reveal from 'reveal.js/dist/reveal.esm.js';
-import Markdown from 'reveal.js/plugin/markdown/markdown.esm.js';
+// import Markdown from 'reveal.js/plugin/markdown/markdown.esm.js';
+// import Search from 'reveal.js/plugin/search/search.esm.js';
+import Notes from 'reveal.js/plugin/notes/notes.esm.js';
+import Zoom from 'reveal.js/plugin/zoom/zoom.esm.js';
 
 let deck = new Reveal({
 
+  plugins: [Zoom, Notes],
   // Display presentation control arrows
   controls: true,
 
@@ -132,7 +136,7 @@ let deck = new Reveal({
   pause: true,
 
   // Flags if speaker notes should be visible to all viewers
-  showNotes: true,
+  showNotes: false,
 
   // Global override for autolaying embedded media (video/audio/iframe)
   // - null:   Media will only autoplay if data-autoplay is present
@@ -251,7 +255,7 @@ let deck = new Reveal({
   hideInactiveCursor: true,
 
   // Time before the cursor is hidden (in ms)
-  hideCursorTime: 5000
+  hideCursorTime: 5000,
 
 });
 deck.initialize();
