@@ -20,5 +20,5 @@
     "target": "ESNext",
     "typeRoots": ["./node_modules/@types/"]
   },
-  "exclude": ["**/node_modules/**", "**/__test__/**", "**/*.test.ts", "**/*.test.tsx"]
+  "exclude": ["node_modules"]
 }
