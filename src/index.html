@@ -69,26 +69,27 @@
         </section>
         <section>
           <h3>Structure</h3>
-          <ol>
+          <ol class="fs-4">
             <li>
-              <span>What are <strong class="text-warning" data-fragment-index="1">Poly</strong>repos</span>
+              <span>What are <strong><span class="text-warning">Poly</span>repos</strong></span>
               <ol class="fragment" data-fragment-index="1">
                 <li>Definition</li>
-                <li>Use Cases (Demo)</li>
+                <li>Use Cases + Demo</li>
                 <li>Pros</li>
                 <li>Cons</li>
               </ol>
             </li>
             <li>
-              <span>What are <strong class="text-info" data-fragment-index="1">Mono</strong>repos</span>
+              <span>What are <strong><span class="text-info">Mono</span>repos</strong></span>
               <ol class="fragment" data-fragment-index="1">
                 <li>Definition</li>
-                <li>Use Cases (Demo)</li>
+                <li>Use Cases + Demo</li>
                 <li>Pros</li>
                 <li>Cons</li>
               </ol>
             </li>
-            <li class="fragment opacity-25" data-fragment-index="1">Sources</li>
+            <li class="fragment" data-fragment-index="1"><strong><span class="text-info">Mono</span>repos</strong> Pitfalls</li>
+            <li class="fragment" data-fragment-index="1">Sources</li>
           </ol>
         </section>
         <section>
@@ -122,11 +123,11 @@
           >
             <h4><span class="text-warning">Poly</span>repos</h4>
             <ul>
-              <li><span class="text-warning">one</span> Problem == <span class="text-warning">one</span> Repo</li>
-              <li class="fragment fade-up">
+              <li class="fragment fade-in-then-semi-out"><span class="text-warning">one</span> Problem == <span class="text-warning">one</span> Repo</li>
+              <li class="fragment fade-in-then-semi-out">
                 <span class="text-warning">one</span> Product == <span class="text-danger">many</span> Repos
               </li>
-              <li class="fragment fade-up">classic, well-understood approach</li>
+              <li class="fragment fade-in-then-semi-out">classic, well-understood approach</li>
             </ul>
 
             <aside class="notes">
@@ -148,14 +149,14 @@
           >
             <h4><span class="text-warning">Poly</span>repos</h4>
             <ul>
-              <li>heterogeneous teams</li>
-              <li class="fragment fade-up">code isolation</li>
-              <li class="fragment fade-up">code separation</li>
-              <li class="fragment fade-up">dependency-free projects</li>
-              <li class="fragment fade-up">monoliths</li>
+              <li class="fragment fade-in-then-semi-out">heterogeneous teams</li>
+              <li class="fragment fade-in-then-semi-out">code isolation</li>
+              <li class="fragment fade-in-then-semi-out">code separation</li>
+              <li class="fragment fade-in-then-semi-out">dependency-free projects</li>
+              <li class="fragment fade-in-then-semi-out">monoliths</li>
             </ul>
 
-            <p class="fragment fade-up">
+            <p class="fragment fade-in-then-semi-out">
               <a href="https://github.com/microsoft/terminal" role="button" target="_blank">terminal Demo</a>
             </p>
 
@@ -183,8 +184,8 @@
           >
             <h4><span class="text-warning">Poly</span>repos</h4>
             <ul>
-              <li>encapsulated code base</li>
-              <li class="fragment fade-up">granular access control</li>
+              <li class="fragment fade-in-then-semi-out">encapsulated code base</li>
+              <li class="fragment fade-in-then-semi-out">granular access control</li>
             </ul>
 
             <aside class="notes">
@@ -209,10 +210,10 @@
           >
             <h4><span class="text-warning">Poly</span>repos</h4>
             <ul>
-              <li>Sync dependency versions</li>
-              <li class="fragment fade-up">Sync API changes</li>
-              <li class="fragment fade-up">establish Coding Standards</li>
-              <li class="fragment fade-up">Code Duplication</li>
+              <li class="fragment fade-in-then-semi-out">Sync dependency versions</li>
+              <li class="fragment fade-in-then-semi-out">Sync API changes</li>
+              <li class="fragment fade-in-then-semi-out">establish Coding Standards</li>
+              <li class="fragment fade-in-then-semi-out">Code Duplication</li>
             </ul>
 
             <aside class="notes">
@@ -252,13 +253,13 @@
           >
             <h4><span class="text-info">Mono</span>repos</h4>
             <ul>
-              <li><span class="text-info">one</span> Problem == <span class="text-info">one</span> Workspace</li>
-              <li><span class="text-success">many</span> Problems == <span class="text-info">one</span> Repo</li>
-              <li class="fragment fade-up">
+              <li class="fragment fade-in-then-semi-out"><span class="text-info">one</span> Problem == <span class="text-info">one</span> Workspace</li>
+              <li class="fragment fade-in-then-semi-out"><span class="text-success">many</span> Problems == <span class="text-info">one</span> Repo</li>
+              <li class="fragment fade-in-then-semi-out">
                 <span class="text-success">many</span> Products == <span class="text-info">one</span> Repo
               </li>
-              <li class="fragment fade-up">monorepo != monolith</li>
-              <li class="fragment fade-up">relatively* new approach</li>
+              <li class="fragment fade-in-then-semi-out">monorepo != monolith</li>
+              <li class="fragment fade-in-then-semi-out">relatively* new approach</li>
             </ul>
             <aside class="notes">
               <ul>
@@ -287,14 +288,14 @@
           >
             <h4><span class="text-info">Mono</span>repos</h4>
             <ul>
-              <li>homogeneous teams</li>
-              <li class="fragment fade-up"><abbr title="Don't repeat yourself">DRY</abbr> principle</li>
-              <li class="fragment fade-up">holistic approach</li>
-              <li class="fragment fade-up"><em>can</em> enforce company standards</li>
-              <li class="fragment fade-up">Workspaces</li>
+              <li class="fragment fade-in-then-semi-out">homogeneous teams</li>
+              <li class="fragment fade-in-then-semi-out"><abbr title="Don't repeat yourself">DRY</abbr> principle</li>
+              <li class="fragment fade-in-then-semi-out">holistic approach</li>
+              <li class="fragment fade-in-then-semi-out"><em>can</em> enforce company standards</li>
+              <li class="fragment fade-in-then-semi-out">Workspaces</li>
             </ul>
 
-            <p class="fragment fade-up">
+            <p class="fragment fade-in-then-semi-out">
               <a href="https://github.com/facebook/react" role="button" target="_blank">react Demo</a>,
               <a href="https://github.com/lookmom/nohands" role="button" target="_blank">nohands Demo</a>
             </p>
@@ -330,12 +331,14 @@
           >
             <h4><span class="text-info">Mono</span>repos</h4>
             <ul>
-              <li>Separation of concerns</li>
-              <li class="fragment fade-up">Setup Sharing</li>
-              <li class="fragment fade-up">Interface Sharing (API-Contracts)</li>
-              <li class="fragment fade-up">holistic deployments</li>
-              <li class="fragment fade-up">workspaces are symlinked in <code>node_modules</code></li>
-              <li class="fragment fade-up">absolute import paths</li>
+              <li class="fragment fade-in-then-semi-out">Separation of concerns</li>
+              <li class="fragment fade-in-then-semi-out">Setup Sharing</li>
+              <li class="fragment fade-in-then-semi-out">Interface Sharing (API-Contracts)</li>
+              <li class="fragment fade-in-then-semi-out">holistic deployments</li>
+              <li class="fragment fade-in-then-semi-out">workspaces are symlinked in <code>node_modules</code></li>
+              <li class="fragment fade-in-then-semi-out">absolute import paths</li>
+              <li class="fragment fade-in-then-semi-out">synced <code>npm outdated</code> and <code>update</code></li>
+              <li class="fragment fade-in-then-semi-out">one branch for a ticket</li>
             </ul>
 
             <aside class="notes">
@@ -358,7 +361,7 @@
           >
             <h4><span class="text-info">Mono</span>repos</h4>
             <ul>
-              <li>More frequent commits
+              <li class="fragment fade-in-then-semi-out">More frequent commits
                 <ul>
                   <li>CI/CD triggers</li>
                   <li>redeploys</li>
@@ -367,8 +370,8 @@
                   <li>merge conflicts</li>
                 </ul>
               </li>
-              <li class="fragment fade-up">bigger repo size</li>
-              <li class="fragment fade-up">Loose Access Management</li>
+              <li class="fragment fade-in-then-semi-out">bigger repo size</li>
+              <li class="fragment fade-in-then-semi-out">Loose Access Management</li>
             </ul>
 
             <aside class="notes">
@@ -388,23 +391,23 @@
         <section>
           <h2><span class="text-info">Mono</span>repo <span class="text-danger">Pitfalls</span></h2>
           <ul>
-            <li class="fragment"><strong class="text-danger">version conflicts</strong> may be hard to resolve
+            <li class="fragment fade-up"><strong class="text-danger">version conflicts</strong> may be hard to resolve
               <ul>
-                <li class="fragment">major <abbr title="pain in the ass">PITA</abbr>:
+                <li class="fragment fade-up">major <abbr title="pain in the ass">PITA</abbr>:
                   <ul>
-                    <li><code>package a: react ^17.0.2</code></li>
-                    <li><code>package b: react >18.2.0</code>
+                    <li><code>workspace-a: react ^17.0.2</code></li>
+                    <li><code>workspace-b: react >18.2.0</code>
                       <ul>
                         <li><code>react-select: react ~16.0.0</code>
                       </ul>
                     </li>
-                    <li><code>package c: react >18.2.0</code></li>
+                    <li><code>workspace-c: react >18.2.0</code></li>
                   </ul>
                 </li>
-                <li class="fragment">might need <a href="https://docs.npmjs.com/cli/v8/configuring-npm/package-json#overrides" target="_blank">npm overrides</a></li>
+                <li class="fragment fade-up">might need <a href="https://docs.npmjs.com/cli/v8/configuring-npm/package-json#overrides" target="_blank">npm overrides</a></li>
               </ul>
             </li>
-            <li class="fragment"><strong class="text-danger">wrong workspace versions</strong> will either fail <u>early</u> or <u>never</u></span></li>
+            <li class="fragment fade-up"><strong class="text-danger">wrong workspace versions</strong> will either fail <u>early</u> or <u>never</u></span></li>
           </ul>
 
           <aside class="notes">
@@ -419,7 +422,7 @@
         data-background-position="100% 75%"
         data-background-size="auto 100vh">
           <h1>That's it.</h1>
-          <p class="fragment">Questions?</p>
+          <p class="fragment fade-up">Questions?</p>
         </section>
         <section data-background-color="white">
           <h2>Sources</h2>
