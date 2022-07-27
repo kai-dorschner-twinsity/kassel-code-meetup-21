@@ -386,21 +386,33 @@
           </section>
         </section>
         <section>
-          <h2><span class="text-info">Mono</span>repo Pitfalls</h2>
+          <h2><span class="text-info">Mono</span>repo <span class="text-danger">Pitfalls</span></h2>
           <ul>
-            <li>version conflicts are hard to resolve
+            <li class="fragment"><strong class="text-danger">version conflicts</strong> may be hard to resolve
               <ul>
-                <li>example:
+                <li class="fragment">major <abbr title="pain in the ass">PITA</abbr>:
                   <ul>
                     <li><code>package a: react ^17.0.2</code></li>
-                    <li><code>package b: react >18.2.0</code></li>
+                    <li><code>package b: react >18.2.0</code>
+                      <ul>
+                        <li><code>react-select: react ~16.0.0</code>
+                      </ul>
+                    </li>
+                    <li><code>package c: react >18.2.0</code></li>
                   </ul>
                 </li>
-                <li>might need <a href="https://docs.npmjs.com/cli/v8/configuring-npm/package-json#overrides" target="_blank">npm overrides</a></li>
+                <li class="fragment">might need <a href="https://docs.npmjs.com/cli/v8/configuring-npm/package-json#overrides" target="_blank">npm overrides</a></li>
               </ul>
             </li>
-            <li>wrong workspace versions will fail <span class="text-muted">early</span></li>
+            <li class="fragment"><strong class="text-danger">wrong workspace versions</strong> will either fail <u>early</u> or <u>never</u></span></li>
           </ul>
+
+          <aside class="notes">
+            <ul>
+              <li><strong>wrong workspace version</strong>: if the given version doesn't match your local workspace npm will try to look in the online registry and install that version, which might give unexpected and very nasty to find side-effects.</li>
+              <li><strong>Pro Tip</strong>: use <code>@scoped</code> workspace names</li>
+            </ul>
+          </aside>
         </section>
         <section data-background-color="white" data-background-image="./uncle-pennybags/beard.png"
         data-background-opacity=".6"
