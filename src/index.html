@@ -68,7 +68,6 @@
           <p class="opacity-50">Also: Ask questions whenever you want</p>
         </section>
         <section>
-          <!-- <section style="background: url(./uncle-pennybags/pointing.png) no-repeat 100% bottom; background-size: 20%"> -->
           <h3>Structure</h3>
           <ol>
             <li>
@@ -116,9 +115,10 @@
           </section>
           <section
             data-auto-animate
-            data-background-image="./uncle-pennybags/pointing.png"
+            data-background-image="./uncle-pennybags/beard.png"
+            data-background-opacity=".6"
             data-background-position="100% 75%"
-            data-background-size="300px"
+            data-background-size="35vh"
           >
             <h4><span class="text-warning">Poly</span>repos</h4>
             <ul>
@@ -133,7 +133,13 @@
             <h4><span class="text-warning">Poly</span>repos</h4>
             <h1>Use Cases</h1>
           </section>
-          <section data-auto-animate>
+          <section
+            data-auto-animate
+            data-background-image="./uncle-pennybags/thumbs-up.png"
+            data-background-opacity=".6"
+            data-background-position="100% 75%"
+            data-background-size="35vh"
+          >
             <h4><span class="text-warning">Poly</span>repos</h4>
             <ul>
               <li>heterogeneous teams</li>
@@ -173,21 +179,27 @@
             <h4><span class="text-info">Mono</span>repos</h4>
             <h1>Definition</h1>
           </section>
-          <section data-auto-animate>
+          <section
+            data-auto-animate
+            data-background-image="./uncle-pennybags/beard.png"
+            data-background-opacity=".6"
+            data-background-position="100% 75%"
+            data-background-size="35vh"
+          >
             <h4><span class="text-info">Mono</span>repos</h4>
             <ul>
               <li><span class="text-success">many</span> Problems = <span class="text-info">one</span> Repo</li>
               <li class="fragment fade-up">
                 <span class="text-success">many</span> Products = <span class="text-info">one</span> Repo
               </li>
-              <li class="fragment fade-up">monorepo &ne; monolith</li>
+              <li class="fragment fade-up">monorepo != monolith</li>
               <li class="fragment fade-up">relatively* new approach</li>
             </ul>
             <aside class="notes">
               <ul>
                 <li>aka: shared codebases</li>
                 <li>
-                  since early 2000s<sup><a href="https://en.wikipedia.org/wiki/Monorepo" target="_blank">1</a></sup>
+                  *since early 2000s<sup><a href="https://en.wikipedia.org/wiki/Monorepo" target="_blank">1</a></sup>
                 </li>
                 <li>monolith: distills many code fragments into one big application (e.g. a videogame)</li>
                 <li>
@@ -201,13 +213,19 @@
             <h4><span class="text-info">Mono</span>repos</h4>
             <h1>Use Cases</h1>
           </section>
-          <section data-auto-animate>
+          <section
+            data-auto-animate
+            data-background-image="./uncle-pennybags/pointing.png"
+            data-background-opacity=".6"
+            data-background-position="100% 75%"
+            data-background-size="35vh"
+          >
             <h4><span class="text-info">Mono</span>repos</h4>
             <ul>
               <li>homogeneous teams</li>
-              <li>D.R.Y. principle</li>
-              <li>holistic approach</li>
-              <li>can enforce company standards</li>
+              <li class="fragment fade-up">D.R.Y. principle</li>
+              <li class="fragment fade-up">holistic approach</li>
+              <li class="fragment fade-up">can enforce company standards</li>
             </ul>
 
             <aside class="notes">
@@ -222,6 +240,85 @@
               </ul>
             </aside>
           </section>
+          <section data-auto-animate>
+            <h4><span class="text-info">Mono</span>repos</h4>
+            <h1>Pros</h1>
+          </section>
+          <section
+            data-auto-animate
+            data-background-image="./uncle-pennybags/thumbs-up.png"
+            data-background-opacity=".6"
+            data-background-position="100% 75%"
+            data-background-size="35vh"
+          >
+            <h4><span class="text-info">Mono</span>repos</h4>
+            <ul>
+              <li>Separation of Concern</li>
+              <li class="fragment fade-up">Config Sharing</li>
+              <li class="fragment fade-up">Interface Sharing (API-Contracts)</li>
+              <li class="fragment fade-up">consistent deployments</li>
+              <li class="fragment fade-up">workspaces are installed in <code>node_modules</code></li>
+            </ul>
+          </section>
+          <section data-auto-animate>
+            <h4><span class="text-info">Mono</span>repos</h4>
+            <h1>Cons</h1>
+          </section>
+          <section
+            data-auto-animate
+            data-background-image="./uncle-pennybags/warn.png"
+            data-background-opacity=".6"
+            data-background-position="100% 75%"
+            data-background-size="35vh"
+          >
+            <h4><span class="text-info">Mono</span>repos</h4>
+            <ul>
+              <li>More frequent commits (ci/cd, pulls, rebases)</li>
+              <li class="fragment fade-up">bigger repo size</li>
+              <li class="fragment fade-up">Access Management</li>
+            </ul>
+
+            <aside class="notes">
+              <ul>
+                <li>
+                  <strong>partial clones</strong> and
+                  <a
+                    href="https://github.blog/2020-01-17-bring-your-monorepo-down-to-size-with-sparse-checkout/"
+                    target="_blank"
+                    >git sparse-checkout</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </section>
+        </section>
+        <section>
+          <h2>Sources</h2>
+          <ul class="fs-6">
+            <li>
+              <a href="https://classic.yarnpkg.com/blog/2017/08/02/introducing-workspaces/" target="_blank"
+                >https://classic.yarnpkg.com/blog/2017/08/02/introducing-workspaces/</a
+              >
+            </li>
+            <li><a href="https://github.com/babel/babel" target="_blank">https://github.com/babel/babel</a></li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=PvabBs_utr8&t=984s" target="_blank"
+                >https://www.youtube.com/watch?v=PvabBs_utr8&t=984s</a
+              >
+            </li>
+            <li>
+              <a href="https://earthly.dev/blog/monorepo-vs-polyrepo/" target="_blank"
+                >https://earthly.dev/blog/monorepo-vs-polyrepo/</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.blog/2020-01-17-bring-your-monorepo-down-to-size-with-sparse-checkout/"
+                target="_blank"
+                >https://github.blog/2020-01-17-bring-your-monorepo-down-to-size-with-sparse-checkout/</a
+              >
+            </li>
+          </ul>
         </section>
       </div>
     </div>
