@@ -186,6 +186,9 @@
             <ul>
               <li class="fragment fade-in-then-semi-out">encapsulated code base</li>
               <li class="fragment fade-in-then-semi-out">granular access control</li>
+              <li class="fragment fade-in-then-semi-out">Independent versioning</li>
+              <li class="fragment fade-in-then-semi-out">Independent service releases</li>
+              <li class="fragment fade-in-then-semi-out">Teams can work autonomously</li>
             </ul>
 
             <aside class="notes">
@@ -210,9 +213,9 @@
           >
             <h4><span class="text-warning">Poly</span>repos</h4>
             <ul>
-              <li class="fragment fade-in-then-semi-out">Sync dependency versions</li>
-              <li class="fragment fade-in-then-semi-out">Sync API changes</li>
-              <li class="fragment fade-in-then-semi-out">establish Coding Standards</li>
+              <li class="fragment fade-in-then-semi-out">Re-Sync dependency versions</li>
+              <li class="fragment fade-in-then-semi-out">Re-Sync API changes</li>
+              <li class="fragment fade-in-then-semi-out">establish Coding Standards / Team Fragmentation</li>
               <li class="fragment fade-in-then-semi-out">Code Duplication</li>
             </ul>
 
@@ -331,9 +334,11 @@
           >
             <h4><span class="text-info">Mono</span>repos</h4>
             <ul>
+              <li class="fragment fade-in-then-semi-out">Lower entry barrier</li>
               <li class="fragment fade-in-then-semi-out">Separation of concerns</li>
-              <li class="fragment fade-in-then-semi-out">Setup Sharing</li>
+              <li class="fragment fade-in-then-semi-out">Setup Sharing / Dev Culture</li>
               <li class="fragment fade-in-then-semi-out">Interface Sharing (API-Contracts)</li>
+              <li class="fragment fade-in-then-semi-out">easier app-wide refactorings</li>
               <li class="fragment fade-in-then-semi-out">holistic deployments</li>
               <li class="fragment fade-in-then-semi-out">workspaces are symlinked in <code>node_modules</code></li>
               <li class="fragment fade-in-then-semi-out">absolute import paths</li>
@@ -343,6 +348,7 @@
 
             <aside class="notes">
               <ul>
+                <li><strong>Lower entry barrier</strong>: on-boarding of new devs is easier when you have all the code</li>
                 <li><strong>Separation of concerns</strong>: separating a program into distinct sections: assets, models, components, utils, etc.</li>
                 <li><strong>Setup Sharing</strong>: consistent test environment, linting rules, coding styles, CI/CD pipelines</li>
               </ul>
@@ -372,6 +378,8 @@
               </li>
               <li class="fragment fade-in-then-semi-out">bigger repo size</li>
               <li class="fragment fade-in-then-semi-out">Loose Access Management</li>
+              <li class="fragment fade-in-then-semi-out">Unmodified Libraries may get new versions</li>
+              <li class="fragment fade-in-then-semi-out">Forking is more difficult</li>
             </ul>
 
             <aside class="notes">
@@ -458,6 +466,20 @@
                 href="https://github.blog/2020-01-17-bring-your-monorepo-down-to-size-with-sparse-checkout/"
                 target="_blank"
                 >https://github.blog/2020-01-17-bring-your-monorepo-down-to-size-with-sparse-checkout/</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://kinsta.com/blog/monorepo-vs-multi-repo/"
+                target="_blank"
+                >https://kinsta.com/blog/monorepo-vs-multi-repo/</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://devblogs.microsoft.com/bharry/the-largest-git-repo-on-the-planet/"
+                target="_blank"
+                >https://devblogs.microsoft.com/bharry/the-largest-git-repo-on-the-planet/</a
               >
             </li>
           </ul>
