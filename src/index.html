@@ -118,7 +118,7 @@
             data-background-image="./uncle-pennybags/beard.png"
             data-background-opacity=".6"
             data-background-position="100% 75%"
-            data-background-size="35vh"
+            data-background-size="auto 50vh"
           >
             <h4><span class="text-warning">Poly</span>repos</h4>
             <ul>
@@ -128,6 +128,12 @@
               </li>
               <li class="fragment fade-up">classic, well-understood approach</li>
             </ul>
+
+            <aside class="notes">
+              <ul>
+                <li><strong>Problem</strong>: Frontend, Backend, Database, Infra</li>
+              </ul>
+            </aside>
           </section>
           <section data-auto-animate>
             <h4><span class="text-warning">Poly</span>repos</h4>
@@ -135,10 +141,10 @@
           </section>
           <section
             data-auto-animate
-            data-background-image="./uncle-pennybags/thumbs-up.png"
+            data-background-image="./uncle-pennybags/pointing.png"
             data-background-opacity=".6"
             data-background-position="100% 75%"
-            data-background-size="35vh"
+            data-background-size="auto 50vh"
           >
             <h4><span class="text-warning">Poly</span>repos</h4>
             <ul>
@@ -148,6 +154,10 @@
               <li class="fragment fade-up">dependency-free projects</li>
               <li class="fragment fade-up">monoliths</li>
             </ul>
+
+            <p class="fragment fade-up">
+              <a href="https://github.com/microsoft/terminal" role="button" target="_blank">terminal Demo</a>
+            </p>
 
             <aside class="notes">
               <ul>
@@ -164,7 +174,13 @@
             <h4><span class="text-warning">Poly</span>repos</h4>
             <h1>Pros</h1>
           </section>
-          <section data-auto-animate>
+          <section
+            data-auto-animate
+            data-background-image="./uncle-pennybags/thumbs-up.png"
+            data-background-opacity=".6"
+            data-background-position="100% 75%"
+            data-background-size="auto 50vh"
+          >
             <h4><span class="text-warning">Poly</span>repos</h4>
             <ul>
               <li>encapsulated code base</li>
@@ -189,7 +205,7 @@
             data-background-image="./uncle-pennybags/warn.png"
             data-background-opacity=".6"
             data-background-position="100% 75%"
-            data-background-size="35vh"
+            data-background-size="auto 50vh"
           >
             <h4><span class="text-warning">Poly</span>repos</h4>
             <ul>
@@ -232,10 +248,11 @@
             data-background-image="./uncle-pennybags/beard.png"
             data-background-opacity=".6"
             data-background-position="100% 75%"
-            data-background-size="35vh"
+            data-background-size="auto 50vh"
           >
             <h4><span class="text-info">Mono</span>repos</h4>
             <ul>
+              <li><span class="text-info">one</span> Problem == <span class="text-info">one</span> Workspace</li>
               <li><span class="text-success">many</span> Problems == <span class="text-info">one</span> Repo</li>
               <li class="fragment fade-up">
                 <span class="text-success">many</span> Products == <span class="text-info">one</span> Repo
@@ -247,12 +264,12 @@
               <ul>
                 <li>aka: shared codebases</li>
                 <li>
-                  *since early 2000s<sup><a href="https://en.wikipedia.org/wiki/Monorepo" target="_blank">1</a></sup>
+                  monorepo: contains many individual, homogeneous (sometimes interdependent) applications (e.g.
+                  microservices)
                 </li>
                 <li>monolith: distills many code fragments into one big application (e.g. a videogame)</li>
                 <li>
-                  monorepo: contains many individual, homogeneous (sometimes interdependent) applications (e.g.
-                  microservices)
+                  *since early 2000s<sup><a href="https://en.wikipedia.org/wiki/Monorepo" target="_blank">1</a></sup>
                 </li>
               </ul>
             </aside>
@@ -266,22 +283,33 @@
             data-background-image="./uncle-pennybags/pointing.png"
             data-background-opacity=".6"
             data-background-position="100% 75%"
-            data-background-size="35vh"
+            data-background-size="auto 50vh"
           >
             <h4><span class="text-info">Mono</span>repos</h4>
             <ul>
               <li>homogeneous teams</li>
-              <li class="fragment fade-up">D.R.Y. principle</li>
+              <li class="fragment fade-up"><abbr title="Don't repeat yourself">DRY</abbr> principle</li>
               <li class="fragment fade-up">holistic approach</li>
-              <li class="fragment fade-up">can enforce company standards</li>
+              <li class="fragment fade-up"><em>can</em> enforce company standards</li>
               <li class="fragment fade-up">Workspaces</li>
             </ul>
+
+            <p class="fragment fade-up">
+              <a href="https://github.com/facebook/react" role="button" target="_blank">react Demo</a>,
+              <a href="https://github.com/lookmom/nohands" role="button" target="_blank">nohands Demo</a>
+            </p>
 
             <aside class="notes">
               <ul>
                 <li>
-                  <strong>homogeneous</strong>: share rules/coding-styles across code fragments, linting, use the same
-                  programming language
+                  <strong>homogeneous</strong>: Share rules/coding-styles
+                  <ul>
+                    <li>.editorconfig</li>
+                    <li>linting</li>
+                    <li>prettier</li>
+                    <li>tsconfig</li>
+                    <li>Test Setup</li>
+                  </ul>
                 </li>
                 <li><strong>DRY</strong>: don't repeat yourself, write once use everywhere</li>
                 <li><strong>holistic</strong>: get everything you need with every dependency traceable</li>
@@ -298,16 +326,24 @@
             data-background-image="./uncle-pennybags/thumbs-up.png"
             data-background-opacity=".6"
             data-background-position="100% 75%"
-            data-background-size="35vh"
+            data-background-size="auto 50vh"
           >
             <h4><span class="text-info">Mono</span>repos</h4>
             <ul>
-              <li>Separation of Concern</li>
-              <li class="fragment fade-up">Config Sharing</li>
+              <li>Separation of concerns</li>
+              <li class="fragment fade-up">Setup Sharing</li>
               <li class="fragment fade-up">Interface Sharing (API-Contracts)</li>
-              <li class="fragment fade-up">consistent deployments</li>
-              <li class="fragment fade-up">workspaces are installed in <code>node_modules</code></li>
+              <li class="fragment fade-up">holistic deployments</li>
+              <li class="fragment fade-up">workspaces are symlinked in <code>node_modules</code></li>
+              <li class="fragment fade-up">absolute import paths</li>
             </ul>
+
+            <aside class="notes">
+              <ul>
+                <li><strong>Separation of concerns</strong>: separating a program into distinct sections: assets, models, components, utils, etc.</li>
+                <li><strong>Setup Sharing</strong>: consistent test environment, linting rules, coding styles, CI/CD pipelines</li>
+              </ul>
+            </aside>
           </section>
           <section data-auto-animate>
             <h4><span class="text-info">Mono</span>repos</h4>
@@ -318,13 +354,21 @@
             data-background-image="./uncle-pennybags/warn.png"
             data-background-opacity=".6"
             data-background-position="100% 75%"
-            data-background-size="35vh"
+            data-background-size="auto 50vh"
           >
             <h4><span class="text-info">Mono</span>repos</h4>
             <ul>
-              <li>More frequent commits (ci/cd, pulls, rebases)</li>
+              <li>More frequent commits
+                <ul>
+                  <li>CI/CD triggers</li>
+                  <li>redeploys</li>
+                  <li>costs</li>
+                  <li>pulls</li>
+                  <li>merge conflicts</li>
+                </ul>
+              </li>
               <li class="fragment fade-up">bigger repo size</li>
-              <li class="fragment fade-up">Access Management</li>
+              <li class="fragment fade-up">Loose Access Management</li>
             </ul>
 
             <aside class="notes">
@@ -342,11 +386,45 @@
           </section>
         </section>
         <section>
+          <h2><span class="text-info">Mono</span>repo Pitfalls</h2>
+          <ul>
+            <li>version conflicts are hard to resolve
+              <ul>
+                <li>example:
+                  <ul>
+                    <li><code>package a: react ^17.0.2</code></li>
+                    <li><code>package b: react >18.2.0</code></li>
+                  </ul>
+                </li>
+                <li>might need <a href="https://docs.npmjs.com/cli/v8/configuring-npm/package-json#overrides" target="_blank">npm overrides</a></li>
+              </ul>
+            </li>
+            <li>wrong workspace versions will fail <span class="text-muted">early</span></li>
+          </ul>
+        </section>
+        <section data-background-color="white" data-background-image="./uncle-pennybags/beard.png"
+        data-background-opacity=".6"
+        data-background-position="100% 75%"
+        data-background-size="auto 100vh">
+          <h1>That's it.</h1>
+          <p class="fragment">Questions?</p>
+        </section>
+        <section data-background-color="white">
           <h2>Sources</h2>
           <ul class="fs-6">
             <li>
+              <a href="https://docs.npmjs.com/cli/v8/using-npm/workspaces" target="_blank"
+                >https://docs.npmjs.com/cli/v8/using-npm/workspaces</a
+              >
+            </li>
+            <li>
               <a href="https://classic.yarnpkg.com/blog/2017/08/02/introducing-workspaces/" target="_blank"
                 >https://classic.yarnpkg.com/blog/2017/08/02/introducing-workspaces/</a
+              >
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Monorepo target="_blank"
+                >https://en.wikipedia.org/wiki/Monorepo</a
               >
             </li>
             <li><a href="https://github.com/babel/babel" target="_blank">https://github.com/babel/babel</a></li>
