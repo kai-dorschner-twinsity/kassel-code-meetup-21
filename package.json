@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "npm run clean && parcel build ./src/index.html --log-level info --dist-dir build --no-source-maps",
+    "build": "npm run clean && parcel build ./src/index.html --log-level info --dist-dir build --public-url . --no-source-maps",
     "clean": "rimraf dist build parcel-bundle-reports .cache .parcel-cache",
     "start": "parcel serve ./src/index.html --open",
     "start:build": "servor ./build index.html 8080 --browse",
