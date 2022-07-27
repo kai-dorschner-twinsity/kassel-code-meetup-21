@@ -122,9 +122,9 @@
           >
             <h4><span class="text-warning">Poly</span>repos</h4>
             <ul>
-              <li><span class="text-warning">one</span> Problem = <span class="text-warning">one</span> Repo</li>
+              <li><span class="text-warning">one</span> Problem == <span class="text-warning">one</span> Repo</li>
               <li class="fragment fade-up">
-                <span class="text-warning">one</span> Product = <span class="text-danger">many</span> Repos
+                <span class="text-warning">one</span> Product == <span class="text-danger">many</span> Repos
               </li>
               <li class="fragment fade-up">classic, well-understood approach</li>
             </ul>
@@ -144,16 +144,64 @@
             <ul>
               <li>heterogeneous teams</li>
               <li class="fragment fade-up">code isolation</li>
-              <li class="fragment fade-up">granular user access</li>
+              <li class="fragment fade-up">code separation</li>
+              <li class="fragment fade-up">dependency-free projects</li>
+              <li class="fragment fade-up">monoliths</li>
             </ul>
+
             <aside class="notes">
               <ul>
                 <li>
-                  <strong>heterogeneous</strong>: different coding styles, different languages, opposing teams repo
-                  structures
+                  <strong>heterogeneous teams</strong>: different coding styles, different languages, opposing teams
+                  repo structures
                 </li>
-                <li><strong>isolation</strong>: different SCMs Github vs Gitlab</li>
-                <li><strong>access</strong>: e.g. grant external users access to only one part of your application</li>
+                <li><strong>code isolation</strong>: different SCMs Github vs Gitlab, Open Source vs. Closed Source</li>
+                <li><strong>code separation</strong> Frontend, Backend, Infra</li>
+              </ul>
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <h4><span class="text-warning">Poly</span>repos</h4>
+            <h1>Pros</h1>
+          </section>
+          <section data-auto-animate>
+            <h4><span class="text-warning">Poly</span>repos</h4>
+            <ul>
+              <li>encapsulated code base</li>
+              <li class="fragment fade-up">granular access control</li>
+            </ul>
+
+            <aside class="notes">
+              <ul>
+                <li>
+                  <strong>granular access control</strong>: e.g. grant external users access to only one part of your
+                  application
+                </li>
+              </ul>
+            </aside>
+          </section>
+          <section data-auto-animate>
+            <h4><span class="text-warning">Poly</span>repos</h4>
+            <h1>Cons</h1>
+          </section>
+          <section
+            data-auto-animate
+            data-background-image="./uncle-pennybags/warn.png"
+            data-background-opacity=".6"
+            data-background-position="100% 75%"
+            data-background-size="35vh"
+          >
+            <h4><span class="text-warning">Poly</span>repos</h4>
+            <ul>
+              <li>Sync dependency versions</li>
+              <li class="fragment fade-up">Sync API changes</li>
+              <li class="fragment fade-up">establish Coding Standards</li>
+              <li class="fragment fade-up">Code Duplication</li>
+            </ul>
+
+            <aside class="notes">
+              <ul>
+                <li><strong>Code Duplication</strong>: node_modules, linting rules</li>
               </ul>
             </aside>
           </section>
@@ -188,9 +236,9 @@
           >
             <h4><span class="text-info">Mono</span>repos</h4>
             <ul>
-              <li><span class="text-success">many</span> Problems = <span class="text-info">one</span> Repo</li>
+              <li><span class="text-success">many</span> Problems == <span class="text-info">one</span> Repo</li>
               <li class="fragment fade-up">
-                <span class="text-success">many</span> Products = <span class="text-info">one</span> Repo
+                <span class="text-success">many</span> Products == <span class="text-info">one</span> Repo
               </li>
               <li class="fragment fade-up">monorepo != monolith</li>
               <li class="fragment fade-up">relatively* new approach</li>
@@ -226,6 +274,7 @@
               <li class="fragment fade-up">D.R.Y. principle</li>
               <li class="fragment fade-up">holistic approach</li>
               <li class="fragment fade-up">can enforce company standards</li>
+              <li class="fragment fade-up">Workspaces</li>
             </ul>
 
             <aside class="notes">
