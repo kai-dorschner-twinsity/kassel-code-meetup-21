@@ -291,7 +291,7 @@
               <li class="fragment fade-in-then-semi-out">homogeneous teams</li>
               <li class="fragment fade-in-then-semi-out"><abbr title="Don't repeat yourself">DRY</abbr> principle</li>
               <li class="fragment fade-in-then-semi-out">holistic approach</li>
-              <li class="fragment fade-in-then-semi-out"><em>can</em> enforce company standards</li>
+              <li class="fragment fade-in-then-semi-out">centralized company standards</li>
               <li class="fragment fade-in-then-semi-out">Workspaces</li>
             </ul>
 
@@ -314,7 +314,7 @@
                 </li>
                 <li><strong>DRY</strong>: don't repeat yourself, write once use everywhere</li>
                 <li><strong>holistic</strong>: get everything you need with every dependency traceable</li>
-                <li><strong>Standards</strong>: Corporate Design, API-Interfaces, CI/CD Pipelines, Git Hooks</li>
+                <li><strong>standards</strong>: Corporate Design, API-Interfaces, CI/CD Pipelines, Git Hooks</li>
               </ul>
             </aside>
           </section>
@@ -338,7 +338,7 @@
               <li class="fragment fade-in-then-semi-out">workspaces are symlinked in <code>node_modules</code></li>
               <li class="fragment fade-in-then-semi-out">absolute import paths</li>
               <li class="fragment fade-in-then-semi-out">synced <code>npm outdated</code> and <code>update</code></li>
-              <li class="fragment fade-in-then-semi-out">one branch for a ticket</li>
+              <li class="fragment fade-in-then-semi-out"><span class="text-info">one</span> feature branch per ticket</li>
             </ul>
 
             <aside class="notes">
@@ -389,19 +389,19 @@
           </section>
         </section>
         <section>
-          <h2><span class="text-info">Mono</span>repo <span class="text-danger">Pitfalls</span></h2>
+          <h2><span class="text-info">Mono</span>repo Pitfalls</h2>
           <ul>
-            <li class="fragment fade-up"><strong class="text-danger">version conflicts</strong> may be hard to resolve
+            <li class="fragment fade-up"><strong class="text-danger">version conflicts</strong> may be a <abbr title="pain in the ass">PITA</abbr> to resolve
               <ul>
-                <li class="fragment fade-up">major <abbr title="pain in the ass">PITA</abbr>:
+                <li class="fragment fade-up">example:
                   <ul>
                     <li><code>workspace-a: react ^17.0.2</code></li>
-                    <li><code>workspace-b: react >18.2.0</code>
+                    <li><code>workspace-b: react >=18.2.0</code>
                       <ul>
                         <li><code>react-select: react ~16.0.0</code>
                       </ul>
                     </li>
-                    <li><code>workspace-c: react >18.2.0</code></li>
+                    <li><code>workspace-c: react >=18.2.0</code></li>
                   </ul>
                 </li>
                 <li class="fragment fade-up">might need <a href="https://docs.npmjs.com/cli/v8/configuring-npm/package-json#overrides" target="_blank">npm overrides</a></li>
